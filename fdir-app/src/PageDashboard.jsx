@@ -1,5 +1,5 @@
 import { useApp } from "./AppContext";
-import { LIGHT, DARK, STATE_COLORS, FEATURE_COLS, SENSOR_META, TOP_SENSORS } from "./theme";
+import { LIGHT, DARK, STATE_COLORS, FEATURE_COLS, SENSOR_META, TOP_SENSORS } from "./Theme";
 
 function StatCard({ label, value, sub, color, t }) {
   return (
