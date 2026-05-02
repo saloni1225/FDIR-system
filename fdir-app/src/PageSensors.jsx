@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useApp } from "./AppContext";
-import { LIGHT, DARK, FEATURE_COLS, SENSOR_META, GROUP_COLORS, TOP_SENSORS, STATE_COLORS } from "./theme";
+import { LIGHT, DARK, FEATURE_COLS, SENSOR_META, GROUP_COLORS, TOP_SENSORS, STATE_COLORS } from "./Theme";
 
-function SensorDetail({ sensorKey, value, t, theme, onClose }) {
+function SensorDetail({ sensorKey, value, t, Theme, onClose }) {
   const meta   = SENSOR_META[sensorKey];
   const pct    = Math.max(0, Math.min(100, ((value - meta.min) / (meta.max - meta.min)) * 100));
   const color  = GROUP_COLORS[meta.group];

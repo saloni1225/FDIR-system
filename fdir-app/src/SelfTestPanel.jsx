@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useApp } from "./AppContext";
-import { LIGHT, DARK, FEATURE_COLS, SENSOR_META, STATE_COLORS } from "./theme";
+import { LIGHT, DARK, FEATURE_COLS, SENSOR_META, STATE_COLORS } from "./Theme";
 
 // ── Pure TMR voter — no model bias, deterministic, instant ───────────────────
 // Takes 3 sensor readings, checks pairwise agreement within threshold.
@@ -18,7 +18,7 @@ function runTMR(s1, s2, s3, threshold) {
 }
 
 // ── Mini DFA diagram ──────────────────────────────────────────────────────────
-function MiniDFA({ activeState, t, theme }) {
+function MiniDFA({ activeState, t, Theme }) {
   const nodes = {
     NOMINAL:   { x:120, y:40  },
     DEGRADED:  { x:40,  y:130 },

@@ -1,5 +1,5 @@
 import { useApp } from "./AppContext";
-import { LIGHT, DARK, STATE_COLORS } from "./theme";
+import { LIGHT, DARK, STATE_COLORS } from "./Theme";
 
 const NAV = [
   { id: "dashboard",     icon: "⊞", label: "Dashboard"    },

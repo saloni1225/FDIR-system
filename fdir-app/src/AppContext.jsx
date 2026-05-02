@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, useRef, useCallback } from "react";
 import * as ort from "onnxruntime-web";
-import { FEATURE_COLS, SENSOR_META, TOP_SENSORS } from "./theme";
+import { FEATURE_COLS, SENSOR_META, TOP_SENSORS } from "./Theme";
 
 const AppCtx = createContext(null);
 export const useApp = () => useContext(AppCtx);

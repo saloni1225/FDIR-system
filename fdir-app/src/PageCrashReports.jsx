@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useApp } from "./AppContext";
-import { LIGHT, DARK, STATE_COLORS, FEATURE_COLS, SENSOR_META } from "./theme";
+import { LIGHT, DARK, STATE_COLORS, FEATURE_COLS, SENSOR_META } from "./Theme";
 
 function ReportDetail({ report, onClose, theme }) {
   // theme passed explicitly — fixes the blank screen crash
