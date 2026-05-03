@@ -17,7 +17,7 @@ function SensorDetail({ sensorKey, value, t, Theme, onClose }) {
   const zone = zones.find(z => pct >= z.from && pct < z.to) || zones[1];
 
   return (
-    <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.35)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 800, padding: 32 }}
+    <div style={{ position: "fixed",transform: "translateZ(0)", inset: 0, background: "rgba(0,0,0,0.35)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 800, padding: 32 }}
       onClick={onClose}>
       <div style={{ background: t.surface, border: `1px solid ${t.border}`, borderRadius: 16, width: "100%", maxWidth: 460, overflow: "hidden" }}
         onClick={e => e.stopPropagation()}>

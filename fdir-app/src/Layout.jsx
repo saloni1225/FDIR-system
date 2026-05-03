@@ -107,7 +107,7 @@ export default function Layout({ children }) {
       </aside>
 
       {/* ── Main content ── */}
-<main style={{ flex: 1, overflow: "auto", minWidth: 0 }}>
+<main style={{ flex: 1, overflow: "auto", minWidth: 0 ,position: "relative"}}>
   <div className="page-enter" key={page} style={{ minHeight: "100vh" }}>
     {children}
   </div>

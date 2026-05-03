@@ -10,7 +10,7 @@ function ReportDetail({ report, onClose, theme }) {
   return (
     <div
       onClick={onClose}
-      style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.4)", display:"flex", alignItems:"center", justifyContent:"center", zIndex:1000, padding:32 }}>
+      style={{ position:"fixed",top:0,left:0,inset:0, background:"rgba(0,0,0,0.4)", display:"flex", alignItems:"center", justifyContent:"center", zIndex:1000, padding:32,transform:"translateZ(0)" }}>
       <div
         onClick={e => e.stopPropagation()}
         style={{ background:t.surface, border:`1px solid ${t.border}`, borderRadius:16, width:"100%", maxWidth:520, maxHeight:"80vh", overflow:"hidden", display:"flex", flexDirection:"column" }}>
